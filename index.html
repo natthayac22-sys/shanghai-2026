@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ทริปเซี่ยงไฮ้ 10–14 ธ.ค. 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b1628;--ink2:#13243d;--red:#c0242e;--gold:#e0b256;--jade:#3aa593;--mist:#c9d4e6;--text:#eef2f9;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--ink);color:var(--text);font-family:'Prompt','Noto Sans Thai',sans-serif;font-weight:300;line-height:1.7}
+h1,h2,h3{font-family:'Mitr','Prompt',sans-serif;font-weight:500;margin:0}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--red),var(--gold));z-index:20}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;text-align:center;overflow:hidden;background:linear-gradient(180deg,#1b0f2e 0%,#5a1f3b 38%,#b9473a 62%,#f0a25a 80%,#0b1628 80.2%)}
+.hero .txt{position:relative;z-index:3;padding:14vh 20px 0}
+.hero .kick{display:inline-block;padding:4px 18px;border:1px solid var(--gold);border-radius:40px;color:var(--gold);font-size:.95rem;letter-spacing:.08em}
+.hero h1{font-size:clamp(3.2rem,13vw,7.5rem);line-height:1.05;margin:18px 0 4px;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.45)}
+.hero h1 small{display:block;font-size:.32em;color:var(--gold);letter-spacing:.35em;font-weight:400;margin-top:6px}
+.hero p{margin:10px auto 0;max-width:30ch;font-size:1.1rem;color:#fbe3cf}
+.sky{position:absolute;left:0;right:0;bottom:0;width:100%;height:56vh;min-height:300px;z-index:2}
+.sky .win{fill:#ffd98a;animation:tw 3.2s infinite alternate}
+.sky .win:nth-child(3n){animation-delay:.9s}.sky .win:nth-child(4n){animation-delay:1.7s}
+@keyframes tw{from{opacity:.25}to{opacity:1}}
+.lantern{position:absolute;top:-80px;z-index:1;width:46px;height:60px;border-radius:50% 50% 45% 45%;background:radial-gradient(circle at 50% 40%,#ff6a4d,var(--red));box-shadow:0 0 26px 8px rgba(255,110,70,.45);animation:fall linear infinite}
+.lantern::before{content:"";position:absolute;top:-10px;left:50%;width:2px;height:12px;background:var(--gold)}
+.lantern::after{content:"";position:absolute;bottom:-14px;left:50%;width:2px;height:16px;background:var(--gold);box-shadow:-3px 14px 0 1px var(--gold)}
+@keyframes fall{to{transform:translateY(115vh) rotate(8deg)}}
+.cue{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);z-index:4;color:#fff;font-size:.85rem;opacity:.85}
+/* route */
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.route{margin:-1px auto 0;padding:46px 0 10px;text-align:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:26px}
+.chip{background:var(--ink2);border:1px solid rgba(224,178,86,.35);border-radius:14px;padding:10px 18px;font-size:.95rem}
+.chip b{display:block;font-family:'Mitr';font-weight:500;color:var(--gold);font-size:1.5rem;line-height:1.2}
+.flight{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 0;font-family:'Mitr';font-size:1rem}
+.flight span{background:var(--ink2);border:1px solid var(--jade);border-radius:30px;padding:4px 16px}
+.flight i{width:26px;height:2px;background:repeating-linear-gradient(90deg,var(--jade) 0 5px,transparent 5px 9px)}
+.flight em{font-style:normal;color:var(--gold);margin:0 8px}
+/* timeline */
+.tl{position:relative;padding:50px 0 20px}
+.tl::before{content:"";position:absolute;left:26px;top:0;bottom:0;width:3px;background:linear-gradient(var(--red),var(--gold),var(--jade));border-radius:3px}
+.day{position:relative;margin:0 0 56px 62px;opacity:0;transform:translateY(34px);transition:opacity .7s,transform .7s}
+.day.in{opacity:1;transform:none}
+.day::before{content:attr(data-d);position:absolute;left:-62px;top:6px;width:54px;height:54px;border-radius:50%;background:var(--red);border:3px solid var(--gold);display:grid;place-items:center;font-family:'Mitr';font-size:1.15rem;box-shadow:0 0 22px rgba(192,36,46,.7);transform:translateX(0)}
+.dh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:12px;padding-left:4px}
+.dh h2{font-size:clamp(1.5rem,5vw,2.1rem);color:var(--gold)}
+.dh span{color:var(--mist);font-size:.95rem}
+.card{position:relative;border-radius:22px;padding:6px 20px;background:linear-gradient(160deg,var(--ink2),#0e1b30);border:1px solid rgba(224,178,86,.3);box-shadow:0 18px 40px rgba(0,0,0,.45),inset 0 0 0 5px rgba(11,22,40,.9),inset 0 0 0 6px rgba(224,178,86,.18)}
+.card.sp{background:linear-gradient(160deg,#2a1328,#111d33)}
+.st{display:grid;grid-template-columns:64px 34px 1fr;gap:0 8px;align-items:start;padding:13px 0;border-bottom:1px dashed rgba(201,212,230,.2)}
+.st:last-child{border-bottom:0}
+.st time{font-family:'Mitr';color:var(--gold);font-size:1.05rem;padding-top:1px}
+.st .ic{font-size:1.35rem;line-height:1.5;text-align:center}
+.st p{margin:0;font-weight:400}
+.st p small{display:block;color:var(--mist);font-weight:300;font-size:.85rem}
+.star{position:absolute;top:-14px;right:18px;background:var(--gold);color:#3a2300;font-family:'Mitr';font-size:.85rem;padding:2px 14px;border-radius:20px}
+.note{display:inline-block;margin:0 0 10px 4px;font-size:.82rem;color:#ffd6c9;background:rgba(192,36,46,.25);border-radius:12px;padding:2px 12px}
+footer{text-align:center;padding:60px 20px 80px;background:linear-gradient(#0b1628,#1b0f2e);border-top:1px solid rgba(224,178,86,.3)}
+footer h2{font-size:clamp(1.8rem,6vw,2.6rem);color:var(--gold)}
+footer p{color:var(--mist);margin:8px 0 0}
+@media(max-width:520px){.st{grid-template-columns:54px 28px 1fr}.tl::before{left:20px}.day{margin-left:54px}.day::before{left:-54px;width:44px;height:44px;font-size:1rem}}
+@media(prefers-reduced-motion:reduce){.lantern,.sky .win{animation:none}.day{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header class="hero">
+  <div id="lanterns"></div>
+  <div class="txt">
+    <span class="kick">10–14 ธันวาคม 2026</span>
+    <h1>เซี่ยงไฮ้<small>SHANGHAI 上海</small></h1>
+    <p>5 วัน เดอะบันด์ ตลาดคริสต์มาส จูเจียเจี่ยว และอาหารอร่อยทั้งเมือง</p>
+  </div>
+  <svg class="sky" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16294a"/><stop offset="1" stop-color="#0b1628"/></linearGradient></defs>
+    <g fill="url(#g)">
+      <rect x="20" y="300" width="70" height="120"/><rect x="100" y="270" width="60" height="150"/><rect x="170" y="310" width="80" height="110"/>
+      <!-- Oriental Pearl Tower -->
+      <rect x="318" y="90" width="5" height="330"/><rect x="326" y="150" width="5" height="270" transform="skewX(0)"/>
+      <circle cx="324" cy="360" r="34"/><circle cx="324" cy="250" r="22"/><circle cx="324" cy="150" r="12"/><rect x="322" y="40" width="4" height="70"/>
+      <polygon points="296,420 324,300 352,420"/>
+      <rect x="400" y="260" width="64" height="160"/><rect x="470" y="300" width="60" height="120"/>
+      <!-- Jin Mao -->
+      <polygon points="560,420 560,260 570,230 580,200 590,170 600,140 610,170 620,200 630,230 640,260 640,420"/>
+      <!-- SWFC -->
+      <polygon points="670,420 670,170 700,110 740,150 740,420"/><path d="M690 150a14 14 0 0 1 28 0z" fill="#0b1628"/>
+      <!-- Shanghai Tower -->
+      <polygon points="770,420 790,200 810,120 830,60 850,120 870,200 890,420"/>
+      <rect x="920" y="250" width="70" height="170"/><rect x="1000" y="300" width="60" height="120"/><rect x="1070" y="270" width="80" height="150"/>
+      <rect x="0" y="400" width="1200" height="20"/>
+    </g>
+    <g fill="#ffd98a">
+      <circle class="win" cx="324" cy="360" r="5"/><circle class="win" cx="324" cy="250" r="4"/><circle class="win" cx="324" cy="150" r="3"/>
+      <rect class="win" x="412" y="280" width="6" height="8"/><rect class="win" x="430" y="300" width="6" height="8"/><rect class="win" x="446" y="330" width="6" height="8"/>
+      <rect class="win" x="580" y="290" width="5" height="8"/><rect class="win" x="600" y="320" width="5" height="8"/><rect class="win" x="615" y="350" width="5" height="8"/>
+      <rect class="win" x="686" y="230" width="6" height="8"/><rect class="win" x="706" y="270" width="6" height="8"/><rect class="win" x="722" y="320" width="6" height="8"/>
+      <rect class="win" x="820" y="200" width="6" height="8"/><rect class="win" x="836" y="260" width="6" height="8"/><rect class="win" x="810" y="330" width="6" height="8"/>
+      <rect class="win" x="935" y="290" width="6" height="8"/><rect class="win" x="960" y="330" width="6" height="8"/><rect class="win" x="1085" y="310" width="6" height="8"/><rect class="win" x="1115" y="350" width="6" height="8"/>
+      <rect class="win" x="40" y="330" width="6" height="8"/><rect class="win" x="120" y="310" width="6" height="8"/><rect class="win" x="200" y="350" width="6" height="8"/>
+    </g>
+  </svg>
+  <div class="cue">เลื่อนลงเพื่อดูโปรแกรม ↓</div>
+</header>
+
+<main class="wrap">
+  <section class="route">
+    <div class="chips">
+      <div class="chip"><b>5</b>วัน</div>
+      <div class="chip"><b>3</b>สนามบิน</div>
+      <div class="chip"><b>1</b>โรงแรมย่านหนานจิงโรด</div>
+    </div>
+    <div class="flight"><span>สุวรรณภูมิ</span><i></i><span>อู่ฮั่น</span><i></i><span>ซ่างไห่หงเฉียว</span><em>✦</em><span>หงเฉียว</span><i></i><span>คุนหมิง</span><i></i><span>สุวรรณภูมิ</span></div>
+  </section>
+
+  <section class="tl">
+
+    <article class="day" data-d="9">
+      <div class="dh"><h2>ออกเดินทาง สู่เซี่ยงไฮ้</h2><span>9–10 ธ.ค. 2026 (วันพุธ–พฤหัสบดี)</span></div>
+      <div class="card">
+        <div class="st"><time>23.45</time><span class="ic">🛫</span><p>พบกันที่สุวรรณภูมิ<small>คืนวันที่ 9 ธ.ค.</small></p></div>
+        <div class="st"><time>03.00</time><span class="ic">✈️</span><p>ออกเดินทางจากสุวรรณภูมิ ไปอู่ฮั่น<small>เช้ามืดวันที่ 10 ธ.ค.</small></p></div>
+        <div class="st"><time>10.30</time><span class="ic">🛬</span><p>ออกจากอู่ฮั่น ไปสนามบินซ่างไห่หงเฉียว</p></div>
+        <div class="st"><time>13.00</time><span class="ic">🏨</span><p>ถึงโรงแรมเซี่ยงไฮ้ รีเซน เอสเทลล์ โฮเทล<small>ย่านหนานจิงโรด</small></p></div>
+        <div class="st"><time>14.00</time><span class="ic">🍲</span><p>บุฟเฟต์ Dongsheng ชั้น 5 ของโรงแรม</p></div>
+        <div class="st"><time>15.00</time><span class="ic">🛍️</span><p>เดินเล่นช็อปปิ้งย่านที่พัก</p></div>
+        <div class="st"><time>18.00</time><span class="ic">🌃</span><p>ถ่ายรูปที่เดอะบันด์ (The Bund)<small>ชมวิวตึกระฟ้าฝั่งผู่ตงยามค่ำ</small></p></div>
+      </div>
+    </article>
+
+    <article class="day" data-d="11">
+      <div class="dh"><h2>เมืองโบราณ จูเจียเจี่ยว (Zhujiajiao)</h2><span>11 ธ.ค. 2026 (วันศุกร์)</span></div>
+      <div class="card">
+        <span class="star">ไฮไลต์วัน</span>
+        <div class="st"><time>10.00</time><span class="ic">🛶</span><p>เมืองโบราณ จูเจียเจี่ยว (Zhujiajiao)<small>เดินเล่นริมคลอง สะพานหิน และบ้านเก่าแบบจีนโบราณ</small></p></div>
+      </div>
+    </article>
+
+    <article class="day" data-d="12">
+      <div class="dh"><h2>สวนโบราณ &amp; ตลาดคริสต์มาส</h2><span>12 ธ.ค. 2026 (วันเสาร์)</span></div>
+      <div class="card sp">
+        <div class="st"><time>09.00</time><span class="ic">🥟</span><p>อาหารเช้าร้าน Tao Tao Ju<small>ย่าน People’s Square</small></p></div>
+        <div class="st"><time>10.00</time><span class="ic">🌳</span><p>Tian An 1,000 Trees</p></div>
+        <div class="st"><time>14.00</time><span class="ic">🏮</span><p>Yuyuan Garden</p></div>
+        <div class="st"><time>16.00</time><span class="ic">🎄</span><p>เดินเล่นตลาดคริสต์มาส Rockbund</p></div>
+        <div class="st"><time>18.00</time><span class="ic">🍽️</span><p>บุฟเฟต์ที่ People’s Square<small>ชั้น 4 ห้างสรรพสินค้า Shimao Square</small></p></div>
+      </div>
+    </article>
+
+    <article class="day" data-d="13">
+      <div class="dh"><h2>ย่านเก่า ย่านเก๋ และของฝาก</h2><span>13 ธ.ค. 2026 (วันอาทิตย์)</span></div>
+      <div class="card">
+        <div class="st"><time>09.00</time><span class="ic">🏙️</span><p>People’s Square</p></div>
+        <div class="st"><time>11.00</time><span class="ic">🍜</span><p>มื้อกลางวันที่ Long Time Ago</p></div>
+        <div class="st"><time>13.00</time><span class="ic">🏛️</span><p>Xintiandi</p></div>
+        <div class="st"><time>13.40</time><span class="ic">🚶</span><p>Huahai Middle Road</p></div>
+        <div class="st"><time>14.30</time><span class="ic">📸</span><p>Anfu Road – Wukang Mansion</p></div>
+        <div class="st"><time>16.00</time><span class="ic">🎁</span><p>ซื้อของฝากร้าน Holiland<small>ห้าง Super Brand Mall</small></p></div>
+        <div class="st"><time>17.00</time><span class="ic">🍖</span><p>ร้านเซฟเฟย (Chef Fei)<small>ห้าง Super Brand Mall</small></p></div>
+      </div>
+    </article>
+
+    <article class="day" data-d="14">
+      <div class="dh"><h2>ลาเซี่ยงไฮ้ กลับบ้าน</h2><span>14 ธ.ค. 2026 (วันจันทร์)</span></div>
+      <div class="card sp">
+        <div class="st"><time>08.30</time><span class="ic">🦀</span><p>บะหมี่มันปู Xie San Bao</p></div>
+        <div class="st"><time>11.00</time><span class="ic">🚖</span><p>เดินทางไปสนามบินซ่างไห่หงเฉียว</p></div>
+        <div class="st"><time>18.40</time><span class="ic">🛬</span><p>ถึงสนามบินคุนหมิง</p></div>
+        <div class="st"><time>21.30</time><span class="ic">✈️</span><p>ออกจากคุนหมิง ไปสุวรรณภูมิ</p></div>
+        <div class="st"><time>23.05</time><span class="ic">🇹🇭</span><p>ถึงประเทศไทยโดยสวัสดิภาพ</p></div>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  <h2>เที่ยวให้สนุก กลับบ้านให้ปลอดภัย</h2>
+  <p>ทริปเซี่ยงไฮ้ · 10–14 ธ.ค. 2026</p>
+</footer>
+
+<script>
+(function(){
+  var L=document.getElementById('lanterns'),i,d;
+  for(i=0;i<9;i++){d=document.createElement('div');d.className='lantern';
+    d.style.left=(5+i*11)+'%';d.style.animationDuration=(14+(i%4)*4)+'s';d.style.animationDelay=(-i*2.3)+'s';
+    d.style.transform='scale('+(0.6+(i%3)*0.25)+')';L.appendChild(d);}
+  var bar=document.getElementById('bar');
+  addEventListener('scroll',function(){var h=document.documentElement;
+    bar.style.width=(100*h.scrollTop/(h.scrollHeight-h.clientHeight))+'%';},{passive:true});
+  var days=document.querySelectorAll('.day');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    days.forEach(function(x){io.observe(x);});
+  }else{days.forEach(function(x){x.classList.add('in');});}
+})();
+</script>
+</body>
+</html>
